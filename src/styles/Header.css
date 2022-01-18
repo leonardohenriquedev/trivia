@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: rgb(236, 98, 5);
+  display: flex;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+}
+
+.headerWrapper {
+  display: flex;
+  width: 230px;
+  position: fixed;
+  left: 10px;
+  align-items: center;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* border: 2px solid white; */
+}
+
+.headerLogo {
+  width: 300px;
+  position: absolute;
+}
+
+.avatarImage {
+  width: 40px;
+  border-radius: 100%;
+  border: 3px solid white;
+}
+
+.playerName {
+  margin: 0;
+}
+
+.headerButton {
+  display: flex;
+  justify-content: center;
+  width: 90px;
+  height: 25px;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  color: rgb(37, 37, 37);
+  padding: 2px 5px;
+  border-radius: 8px;
+}
+
+.playerScore {
+  margin: 0;
+}
+
+.score {
+/* d */
+}
+
+.logoutBox {
+  position: fixed;
+  right: 10px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.logout {
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  height: 25px;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  color: rgb(37, 37, 37);
+  padding: 2px 5px;
+  border-radius: 8px;
+  margin-top: 7px;
+  border: none;
+}

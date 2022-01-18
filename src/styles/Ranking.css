@@ -1,0 +1,66 @@
+.rankingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(48, 48, 48);
+}
+
+.rankingBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  min-height: 420px;
+  width: 600px;
+  color: rgb(15, 15, 15);
+  background-color: rgb(240, 240, 240);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.rankingLine {
+  display: flex;
+  align-items: center;
+  width: 550px;
+  padding: 5px;
+  background-color: rgb(209, 209, 209);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.rankingLine img {
+  width: 40px;
+  border-radius: 5px;
+  /* border-radius: 50px; */
+}
+
+.rankingInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  display: flex;
+  font-size: 20px;
+  margin: 0;
+  margin-right: 25px;
+}
+
+.rankingInfo p {
+  text-align: center;
+  margin: 0;
+}
+
+.goHomeButton {
+  font-weight: bold;
+  cursor: pointer;
+  width: 80px;
+  height: 25px;
+  background-color: rgb(233, 79, 7);
+  color: white;
+  border-radius: 5px;
+  margin-top: 30px;
+  border: none;
+}

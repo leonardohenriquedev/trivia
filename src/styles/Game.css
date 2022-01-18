@@ -1,0 +1,104 @@
+.gamePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(48, 48, 48);
+}
+
+.gameBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  min-height: 420px;
+  width: 600px;
+  color: rgb(15, 15, 15);
+  background-color: rgb(240, 240, 240);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.cronometer {
+  justify-self: center;
+  background-color: rgb(247, 0, 0);
+  padding: 3px 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.questionBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.alternatives {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 550px;
+  /* border: 2px solid black; */
+}
+
+.category {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  /* margin-bottom: 10px; */
+  /* border: 1px solid black; */
+}
+
+.answerButton {
+  font-weight: bold;
+  cursor: pointer;
+  height: 25px;
+  background-color: rgb(53, 141, 255);
+  color: white;
+  min-width: 30px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  border: none;
+  /* transition: all 0.2s; */
+  margin: 5px;
+}
+
+.answerButton:hover {
+  color: rgb(48, 250, 48);
+}
+
+.nextButton {
+  font-weight: bold;
+  cursor: pointer;
+  width: 60px;
+  height: 25px;
+  background-color: rgb(233, 79, 7);
+  color: white;
+  border-radius: 5px;
+  margin-top: 30px;
+  border: none;
+}
+
+.nextButton:disabled {
+  cursor: default;
+  background-color: rgb(189, 189, 189);
+}

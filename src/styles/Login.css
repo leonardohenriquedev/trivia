@@ -1,0 +1,73 @@
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-color: rgb(48, 48, 48);
+}
+
+.triviaLogo {
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.loginForm {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginInput {
+  width: 200px;
+  border: none;
+  outline: none;
+  height: 20px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  /* background-color: blue; */
+  color: rgb(54, 54, 54);
+}
+
+.btnLogin:disabled {
+  cursor: default;
+  border: none;
+  height: 24px;
+  color: white;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 200px;
+  background-color: rgba(94, 94, 94, 0.582);
+}
+
+.btnLogin {
+  /* font-weight: bolder; */
+  cursor: pointer;
+  border: none;
+  height: 24px;
+  color: white;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 200px;
+  background-color: rgb(129, 187, 36);
+  transition: all 0.3s ease;
+}
+
+.btnConfig {
+  cursor: pointer;
+  border: none;
+  height: 24px;
+  color: white;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 200px;
+  background-color: rgb(235, 138, 28);
+}
+
+label {
+  font-weight: bold;
+  font-size: 13px;
+  color: rgb(204, 204, 204);
+}

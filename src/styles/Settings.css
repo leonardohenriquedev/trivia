@@ -1,0 +1,53 @@
+.settingsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(48, 48, 48);
+}
+
+.settingsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 420px;
+  width: 600px;
+  color: rgb(15, 15, 15);
+  background-color: rgb(240, 240, 240);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.settingsInputs {
+  display: flex;
+  margin-top: 10px;
+}
+
+.settingsSelect {
+  width: 150px;
+  text-align: center;
+}
+
+.settingsLabel {
+  width: 100px;
+  color: black;
+}
+
+.settingsLabel label {
+  color: black;
+  font-size: 20px;
+}
+
+.saveSettings {
+  font-weight: bold;
+  cursor: pointer;
+  width: 90px;
+  height: 25px;
+  background-color: rgb(233, 79, 7);
+  color: white;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: none;
+}
