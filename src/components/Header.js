@@ -154,7 +154,7 @@ class Header extends Component {
                   Score: {score}
                 </p>
               </div>
-              <div className="score headerButton">
+              <div className="settings headerButton">
                 <p
                   data-testid="header-score"
                   onClick={() => this.redirectTo('/settings')}

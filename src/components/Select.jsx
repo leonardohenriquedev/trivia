@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class Select extends Component {
   render() {
-    const { id, label, options, onChange } = this.props;
+    const { id, label, options, onChange, value } = this.props;
 
     return (
       <div className="settingsInputs">

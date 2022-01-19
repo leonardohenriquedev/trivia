@@ -69,6 +69,8 @@ class Configuration extends React.Component {
 
   render() {
     const { categories } = this.state;
+    const { category } = this.props;
+
     return (
       <div className="settingsPage">
         <div className="settingsBox">
@@ -111,6 +113,7 @@ Configuration.propTypes = {
 
 const mapStateToProps = (state) => ({
   fromLogin: state.configuration.fromLogin,
+  category: state.configuration.category,
 });
 
 const mapDispatchToProps = (dispatch) => ({

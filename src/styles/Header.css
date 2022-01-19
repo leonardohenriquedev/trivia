@@ -53,10 +53,6 @@
 cursor: default;
 }
 
-.score{
-  cursor: pointer;
-}
-
 .logoutBox {
   position: fixed;
   height: 40px;
@@ -82,6 +78,10 @@ cursor: default;
   /* margin-left: 10px; */
   border-radius: 8px;
   border: none;
+}
+
+.settings {
+  cursor: pointer;
 }
 
 .soundOn {

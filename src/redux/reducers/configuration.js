@@ -1,9 +1,9 @@
 import { SAVE_OPTIONS, SAVE_ROUTE } from '../actions';
 
 const INITIAL_STATE = {
-  category: '',
+  category: '9',
   type: '',
-  difficulty: '',
+  difficulty: 'easy',
   fromLogin: false,
 };
 
