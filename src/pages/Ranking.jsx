@@ -6,6 +6,7 @@ import { getFromLocalStorage } from '../services/localStorage';
 import Header from '../components/Header';
 
 import '../styles/Ranking.css';
+import { pauseSong } from '../helpers/player';
 
 class Ranking extends Component {
   constructor(props) {
@@ -31,9 +32,13 @@ class Ranking extends Component {
   }
 
   redirect(route) {
+    if (route === '/feedback') {
+      return window.history.back();
+    }
     const { dispatch, history } = this.props;
     dispatch(playerReset());
     history.push(`${route}`);
+    pauseSong();
   }
 
   render() {
@@ -47,21 +52,31 @@ class Ranking extends Component {
           {ranking.map(({ name, score, picture }, index) => (
             <div key={index} className="rankingLine">
               <img src={picture} alt={name} />
-              <div className='rankingInfo'>
+              <div className="rankingInfo">
                 <p data-testid={`player-name-${index}`}>{name}</p>
 
                 <p data-testid={`player-score-${index}`}>Score: {score}</p>
               </div>
             </div>
           ))}
-          <button
-            data-testid="btn-go-home"
-            onClick={() => this.redirect('/')}
-            type="button"
-            className='goHomeButton'
-          >
-            Go Home
-          </button>
+          <div>
+            <button
+              onClick={() => this.redirect('/feedback')}
+              type="button"
+              className="goBackButton"
+            >
+              Go Back
+            </button>
+            
+            {/* <button
+              data-testid="btn-go-home"
+              onClick={() => this.redirect('/')}
+              type="button"
+              className="goHomeButton"
+            >
+              Go Home
+            </button> */}
+          </div>
         </div>
       </div>
     );

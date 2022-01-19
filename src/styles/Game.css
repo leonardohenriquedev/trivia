@@ -5,6 +5,9 @@
   justify-content: center;
   height: 100vh;
   background-color: rgb(48, 48, 48);
+  background-image: url('../styles/images/background.jpg');
+  background-size: contain;
+  background-blend-mode: multiply;
 }
 
 .gameBox {
@@ -63,27 +66,20 @@
   font-size: 30px;
   text-align: center;
   margin: 0;
-  /* margin-bottom: 10px; */
-  /* border: 1px solid black; */
 }
 
 .answerButton {
   font-weight: bold;
   cursor: pointer;
   height: 25px;
-  background-color: rgb(53, 141, 255);
+  background-color: rgb(53, 53, 53);
   color: white;
   min-width: 30px;
   border-radius: 5px;
   margin-bottom: 5px;
   margin-top: 20px;
   border: none;
-  /* transition: all 0.2s; */
   margin: 5px;
-}
-
-.answerButton:hover {
-  color: rgb(48, 250, 48);
 }
 
 .nextButton {
@@ -101,4 +97,20 @@
 .nextButton:disabled {
   cursor: default;
   background-color: rgb(189, 189, 189);
+}
+
+.settin
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 268px;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.253);
+  /* margin-bottom: 10px; */
+  /* border: 1px solid black; */
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Configuration from './pages/Configuration';
 import Game from './pages/Game';
@@ -14,7 +14,7 @@ export default function App() {
     <BrowserRouter>
       <Route path="/" component={Player} />
       <Route exact path="/" component={Login} />
-      <Route path="/configuration" component={Configuration} />
+      <Route path="/settings" component={Configuration} />
       <Route path="/game" component={Game} />
       <Route path="/feedback" component={Feedback} />
       <Route path="/ranking" component={Ranking} />

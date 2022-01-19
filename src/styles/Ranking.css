@@ -5,6 +5,9 @@
   justify-content: center;
   height: 100vh;
   background-color: rgb(48, 48, 48);
+  background-image: url("../styles/images/background.jpg");
+  background-size: contain;
+  background-blend-mode: multiply;
 }
 
 .rankingBox {
@@ -54,6 +57,19 @@
 }
 
 .goHomeButton {
+  font-weight: bold;
+  cursor: pointer;
+  width: 80px;
+  height: 25px;
+  background-color: rgb(233, 79, 7);
+  color: white;
+  border-radius: 5px;
+  margin-top: 30px;
+  border: none;
+  margin-left: 10px;
+}
+
+.goBackButton {
   font-weight: bold;
   cursor: pointer;
   width: 80px;

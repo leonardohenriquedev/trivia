@@ -43,28 +43,35 @@ class Question extends Component {
 
     return (
       <div className="questionBox">
-        <p data-testid="question-category" className="category">
-          {htmlDecode(question.category)}
-        </p>
-        <p data-testid="question-text" className="question">
-          {htmlDecode(question.question)}
-        </p>
+        {alternatives.length > 0 ? (
+          <div className="questionBox">
+            <p data-testid="question-category" className="category">
+              {htmlDecode(question.category)}
+            </p>
+            <p data-testid="question-text" className="question">
+              {htmlDecode(question.question)}
+            </p>
 
-        {/* Função de ambaralhamento retirada do site https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj */}
-        <div data-testid="answer-options" className="alternatives">
-          {alternatives.map(([text, testid, buttonClass]) => (
-            <button
-              disabled={disableAlternatives}
-              className={`answerButton ${buttonClass}`}
-              data-testid={testid}
-              key={testid}
-              onClick={() => onAnswer(testid)}
-              type="button"
-            >
-              {htmlDecode(text)}
-            </button>
-          ))}
-        </div>
+            {/* Função de ambaralhamento retirada do site https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj */}
+
+            <div data-testid="answer-options" className="alternatives">
+              {alternatives.map(([text, testid, buttonClass]) => (
+                <button
+                  disabled={disableAlternatives}
+                  className={`answerButton ${buttonClass}`}
+                  data-testid={testid}
+                  key={testid}
+                  onClick={() => onAnswer(testid)}
+                  type="button"
+                >
+                  {htmlDecode(text)}
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="loading">Loading...</div>
+        )}
       </div>
     );
   }

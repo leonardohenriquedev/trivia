@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class Input extends Component {
   render() {
-    const { id, label, onChange, testId, type, autocomplete, className } =
+    const { id, label, onChange, testId, type, autocomplete, className, onKeyPress } =
       this.props;
 
     return (
@@ -17,6 +17,7 @@ class Input extends Component {
           type={type}
           autoComplete={autocomplete}
           className={className}
+          onKeyPress={onKeyPress}
         />
       </div>
     );

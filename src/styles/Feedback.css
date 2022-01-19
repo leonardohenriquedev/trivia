@@ -5,6 +5,9 @@
   justify-content: center;
   height: 100vh;
   background-color: rgb(48, 48, 48);
+  background-image: url("../styles/images/background.jpg");
+  background-size: contain;
+  background-blend-mode: multiply;
 }
 
 .feedbackBox {

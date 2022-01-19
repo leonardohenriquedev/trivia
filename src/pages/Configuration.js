@@ -2,7 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Select from '../components/Select';
-import { saveOptions } from '../redux/actions';
+import {
+  saveOptions as saveOptionsACTION,
+  saveRoute as saveRouteACTION,
+} from '../redux/actions';
 import { getCategories } from '../services';
 
 import '../styles/Settings.css';
@@ -52,10 +55,16 @@ class Configuration extends React.Component {
   }
 
   saveOptions() {
-    const { history, dispatch } = this.props;
+    const { history, fromLogin, saveRoute, saveOptions } = this.props;
+
     const { options } = this.state;
-    dispatch(saveOptions(options));
-    history.push('/');
+    saveOptions(options);
+
+    if (fromLogin) {
+      console.log('caiu uuuu');
+      history.push('/');
+      saveRoute(false);
+    } else history.push('/game');
   }
 
   render() {
@@ -82,7 +91,11 @@ class Configuration extends React.Component {
             options={TYPES}
             onChange={this.handleChange}
           />
-          <button type="button" onClick={this.saveOptions} className='saveSettings'>
+          <button
+            type="button"
+            onClick={this.saveOptions}
+            className="saveSettings"
+          >
             Save
           </button>
         </div>
@@ -96,4 +109,13 @@ Configuration.propTypes = {
   history: PropTypes.objectOf(PropTypes.any),
 }.isRequired;
 
-export default connect()(Configuration);
+const mapStateToProps = (state) => ({
+  fromLogin: state.configuration.fromLogin,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  saveRoute: (value) => dispatch(saveRouteACTION(value)),
+  saveOptions: (payload) => dispatch(saveOptionsACTION(payload)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Configuration);

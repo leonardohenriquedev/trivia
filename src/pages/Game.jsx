@@ -100,8 +100,6 @@ class Game extends Component {
 
     if (id === 'correct-answer') {
       newScore += MIN_POINTS + timeLeft * POINTS[difficulty];
-      console.log({ difficulty });
-      console.log({ newScore });
       assertion += 1;
     }
 
@@ -119,17 +117,20 @@ class Game extends Component {
     return (
       <div className="gamePage">
         <Header />
+
         <div className="gameBox">
           <Timer
             setTimeLeft={this.setTimeLeft}
             reset={resetTimer}
             stop={stopTimer}
           />
+
           <Question
             question={results[indexAnswer]}
             onAnswer={this.handleAnswer}
             disableAlternatives={stopTimer}
           />
+
           {enableButton ? (
             <button
               type="button"

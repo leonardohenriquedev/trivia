@@ -29,7 +29,7 @@ class Feedback extends Component {
         <div className="feedbackBox">
           <p data-testid="feedback-text" className="feedbackText">
             {assertions < CORRECT_ANSWERS
-              ? 'Could be better... 🧐'
+              ? 'Could be better... 👀'
               : 'Well Done! 🥳'}
           </p>
           <p data-testid="feedback-total-score" className="feedbackInfos">

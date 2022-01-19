@@ -13,11 +13,11 @@
 
 .headerWrapper {
   display: flex;
-  width: 230px;
+  width: 290px;
   position: fixed;
   left: 10px;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* align-items: center; */
   /* border: 2px solid white; */
 }
@@ -33,14 +33,9 @@
   border: 3px solid white;
 }
 
-.playerName {
-  margin: 0;
-}
-
 .headerButton {
   display: flex;
   justify-content: center;
-  width: 90px;
   height: 25px;
   align-items: center;
   background-color: rgb(243, 243, 243);
@@ -49,27 +44,34 @@
   border-radius: 8px;
 }
 
-.playerScore {
-  margin: 0;
+.playerName {
+  padding: 0 10px;
+  margin-left: 20px;
 }
 
-.score {
-/* d */
+.playerScore {
+cursor: default;
+}
+
+.score{
+  cursor: pointer;
 }
 
 .logoutBox {
   position: fixed;
+  height: 40px;
+  font-size: 14px;
   right: 10px;
-  width: 100px;
+  width: 250px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
+  /* margin-top: 5px; */
 }
 
 .logout {
   cursor: pointer;
-  font-weight: bold;
   display: flex;
   justify-content: center;
   width: 60px;
@@ -77,8 +79,23 @@
   align-items: center;
   background-color: rgb(243, 243, 243);
   color: rgb(37, 37, 37);
-  padding: 2px 5px;
+  /* margin-left: 10px; */
   border-radius: 8px;
-  margin-top: 7px;
   border: none;
+}
+
+.soundOn {
+  width: 30px;
+  /* margin-top: 4px; */
+  /* margin-right: 10px; */
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.soundOff {
+  width: 30px;
+  /* margin-top: 4px; */
+  /* margin-right: 10px; */
+  cursor: pointer;
+  transition: all 1s ease;
 }
